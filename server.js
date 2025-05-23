@@ -23,7 +23,7 @@ app.post("/journal", async (req, res) => {
         "Content-Type": "application/json"
       },
       body: JSON.stringify({
-        model: "anthropic/claude-sonnet-4", // or the exact model your OpenRouter supports
+        model: "anthropic/claude-sonnet-4", 
         messages: [
           { role: "user", content: prompt }
         ],
